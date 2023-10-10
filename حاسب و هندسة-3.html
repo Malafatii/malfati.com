@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>حاسب و هندسة-3</title>
+    <link rel="stylesheet" href="عام.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!---------الفيزياء--------->
+    <div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="الفبزياء.png">
+        </div>
+        <div class="top-text">
+          <div class="name">الفيزياء 3</div>
+          <p> مادة الفيزياء 3</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank" >أوراق العمل</a>
+            <a href="#" target="_blank">الكتاب الألكتروني </a>
+          </div>
+        </div>
+      </div>
+       <!---------Mega Goal--------->
+      <div class="card">
+        <div class="img">
+          <img src="Mega-Goal-1.png">
+        </div>
+        <div class="top-text">
+          <div class="name">Mega Goal 3-1</div>
+          <p>English language Mega Goal</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank">Worksheets</a>
+            <a href="#" target="_blank">The E-Book</a>
+          </div>
+        </div>
+      </div>
+        <!--------- رياضيات --------->
+      <div class="card">
+        <div class="img">
+          <img src="رياضيات-1.png">
+        </div>
+        <div class="top-text">
+          <div class="name">رياضيات 2-1</div>
+          <p>مادة الرياضيات 1-2</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank"> أوراق العمل</a>
+            <a href="#" target="_blank"> الكتاب الألكتروني</a>
+          </div>
+        </div>
+      </div>
+      <!--------- كيمياء --------->
+      <div class="card">
+        <div class="img">
+          <img src="كيمياء .png">
+        </div>
+        <div class="top-text">
+          <div class="name">كيمياء2-1  </div>
+          <p> مادة  الكيمياء2-1 </p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank">أوراق العمل</a>
+            <a href="#" target="_blank">الكتاب الألكتروني </a>
+          </div>
+        </div>
+      </div>
+        <!--------- الذكاء الأصطناعي --------->
+        <div class="card">
+            <div class="img">
+              <img src="الذكاء الأصطناعي.png">
+            </div>
+            <div class="top-text">
+              <div class="name">الذكاء الأصطناعي  </div>
+              <p> الذكاء الأصطناعي
+                
+              </p>
+            </div>
+            <div class="bottom-text">
+              <div class="text"></div>
+              <div class="btn">
+                <a href="#" target="_blank">أوراق العمل</a>
+                <a href="#" target="_blank">الكتاب الألكتروني </a>
+              </div>
+            </div>
+          </div>
+      <!---------  هندسة البرمجيات --------->
+      <div class="card">
+        <div class="img">
+          <img src="توحيد.png">
+        </div>
+        <div class="top-text">
+          <div class="name">  هندسة البرمجيات</div>
+          <p> هندسة البرمجيات</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank">أوراق العمل</a>
+            <a href="#" target="_blank"> الكتاب الألكتروني</a>
+          </div>
+        </div>
+    </div>
+      <!--------- البحث و مصادر المعلومات --------->
+      <div class="card">
+        <div class="img">
+          <img src="البحث و مصادر المعلومات.png">
+        </div>
+        <div class="top-text">
+          <div class="name"> البحث و مصادر المعلومات</div>
+          <p> البحث و مصادر المعلومات</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#"target="_blank">أوراق العمل</a>
+            <a href="" target="_blank"> الكتاب الألكتروني</a>
+          </div>
+        </div>
+      </div>
+      <script>
+        const disabledKeys = ["c", "C", "x", "J", "u", "I"]; // keys that will be disabled
+        const showAlert = e => {
+          e.preventDefault(); // preventing its default behaviour
+          return alert("Sorry, you can't view or copy source codes this way!");
+        }
+        document.addEventListener("contextmenu", e => {
+          showAlert(e); // calling showAlert() function on mouse right click
+        });
+        document.addEventListener("keydown", e => {
+          // calling showAlert() function, if the pressed key matched to disabled keys
+          if((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+            showAlert(e);
+          }
+        });
+      </script>
+  </body>
+</html>

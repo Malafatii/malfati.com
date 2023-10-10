@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> أختر المسار-3 </title>
+    <link rel="stylesheet" href="أختر المسار-3.css">
+  </head>
+  <body>
+      <div class="choose"> أختر المسار</div>
+    <div class="container">
+      <div class="box">
+      <div class="image">
+        <a href="">
+        <img src="المسار العام.png">
+        </div>
+    </a>
+        <div class="name_job">المسار العام</div>
+        <a href="عام-3.html" style="text-decoration: none;">
+        <p> أضغط (أذهب) لعرض جيمع مستندات المسار العام</p>
+    </a>
+        <div class="btns">
+            <a href="عام-3.html" style="text-decoration: none;">
+          <button>أذهب</button>
+        </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <a href="صحة و حياة-3.html" style="text-decoration: none;">
+        <img src="مسار الصحة و الحياة pnf.jpg" alt="">
+    </a>
+        </div>
+        <div class="name_job">مسار الصحة والحياة </div>
+       <a href="صحة و حياة-3.html" style="text-decoration: none;">
+        <p>أضغط (أذهب) لعرض جيمع مستندات الفصل مسارالصحة والحياة</p>
+    </a>
+        <div class="btns">
+            <a href="صحة و حياة-3.html" style="text-decoration: none;">
+          <button> أذهب </button>
+        </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <a href="حاسب و هندسة-3.html" style="text-decoration: none;">
+        <img src="الحاسب و الهندسة .png" alt="">
+    </a>
+        </div>
+        <div class="name_job">مسار الحاسب و الهندسة </div> 
+        <a href="حاسب و هندسة-3.html" style="text-decoration: none;">
+        <p> أضغط (أذهب) لعرض جيمع مستندات مسار الحاسب</p>
+    </a>
+        <div class="btns">
+            <a href="حاسب و هندسة-3.html" style="text-decoration: none;">
+          <button>أذهب</button>
+        </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <a href="أدارة أعمال-3.html" style="text-decoration: none;">
+        <img src="أدارة الاعمال .png" alt="">
+    </a>
+        </div>
+        <div class="name_job">مسار أدارة الأعمال  </div> 
+        <a href="أدارة أعمال-3.html" style="text-decoration: none;">
+        <p> أضغط (أذهب) لعرض جيمع مستندات الفصل الدرسي الثالث</p>
+    </a>
+        <div class="btns">
+            <a href="أدارة أعمال-3.html" style="text-decoration: none;">
+          <button>أذهب</button>
+        </a>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const disabledKeys = ["c", "C", "x", "J", "u", "I"]; // keys that will be disabled
+      const showAlert = e => {
+        e.preventDefault(); // preventing its default behaviour
+        return alert("Sorry, you can't view or copy source codes this way!");
+      }
+      document.addEventListener("contextmenu", e => {
+        showAlert(e); // calling showAlert() function on mouse right click
+      });
+      document.addEventListener("keydown", e => {
+        // calling showAlert() function, if the pressed key matched to disabled keys
+        if((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+          showAlert(e);
+        }
+      });
+    </script>
+      </body>

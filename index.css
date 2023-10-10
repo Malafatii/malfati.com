@@ -1,0 +1,259 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kufam', sans-serif;
+}
+main {
+  background: #6610f2;
+}
+.user{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.malfatii{
+  color: rgb(98, 196, 158);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.nav_logo {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 570px;
+  
+}
+.icon-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #333333;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.icon-button:hover {
+  cursor: pointer;
+}
+
+.icon-button:active {
+  background: #cccccc;
+}
+
+.icon-button__badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.menu_items {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.malf {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: url(bg-dot.png), url(bg-dot.png), url(bg-round.png), url(bg-tree.png);
+  background-position: 10px 10px, bottom 215px right 10px, left 55% top -1%, left 45% bottom -1px;
+  background-repeat: no-repeat;
+}
+.curveImg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.malf .row {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  padding: 0 60px;
+  gap: 30px;
+  justify-content: space-between;
+}
+.malf .row h2,
+.malf .row p {
+  color: #fff;
+}
+.malf .row h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+.malf .column {
+  width: 50%;
+}
+.buttons {
+  display: flex;
+  margin-top: 25px;
+  gap: 10px;
+}
+.btn {
+  padding: 14px 26px;
+  background: #fff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:last-child {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+.btn:last-child:hover {
+  background-color: #fff;
+  color: #333;
+}
+.malf_img {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+#menu_toggle {
+  display: none;
+}
+
+  @media (width < 860px) {
+    .nav_logo {
+      padding: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 160px;
+      
+    }
+    .user{
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-left: 30px;
+    }
+    #menu_toggle {
+      display: block;
+    }
+    .nav {
+      padding: 0 20px;
+      background-color: #fff;
+    }
+    header {
+      position: fixed;
+      top: -3%;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      height: 1%;
+    }
+    .menu_items {
+      position: fixed;
+      top: 0;
+      width: 220px;
+      background-color: #fff;
+      height: 100%;
+      left: -100%;
+      padding: 50px 30px 30px;
+      flex-direction: column;
+      transition: all 0.5s ease;
+    }
+    .showMenu .menu_items {
+      left: 0;
+    }
+    a {
+      color: #333;
+    }
+    #menu_toggle {
+      width: 20px;
+      cursor: pointer;
+    }
+    .menu_items #menu_toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .malf {
+      padding-top: 130px;
+    }
+    .malf .row {
+      flex-direction: column;
+      padding: 0 20px;
+      justify-content: center;
+    }
+    .malf .row .column {
+      width: 100%;
+    }
+    .curveImg{
+      bottom: 0%;
+      height: 30%;
+      width: 100%;
+    }
+  }
+
+@media (width < 600px) {
+  .malf {
+    padding-top: 80px;
+  }
+  .malf .row h2 {
+    font-size: 26px;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  .btn {
+    padding: 10px 16px;
+  }
+}
+
+
+
+

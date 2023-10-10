@@ -1,0 +1,175 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');    
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kufam', sans-serif;
+}
+.back{
+  color: #fff;
+  margin-left: -81%;
+  font-size: 3vh;
+}
+.nav_logo {
+    padding: 50px 0;
+    margin-top: -10%;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .curveImg {
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+    pointer-events: none;
+  }
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #6610f2;
+  background-size: cover;
+  background-position: center;
+}
+::selection{
+  color: #fff;
+  background: #FC4782;
+}
+.wrapper{
+  color: #fff;
+  max-width: 900px;
+  text-align: center;
+  padding: 0 50px;
+}
+.wrapper .title{
+  font-size: 35px;
+  font-weight: 500;
+}
+.wrapper .title span{
+  font-weight: 700;
+  color: #5ddabc;
+}
+.wrapper form{
+  margin: 50px 0;
+}
+.wrapper .count-down{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40%;
+  position: relative;
+}
+.wrapper .count-down .timer{
+  height: 100%;
+  width: 100px;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30%;
+}
+.count-down .timer .numb{
+  font-size: 29px;
+  font-weight: 500;
+}
+.count-down .timer .text{
+  font-size: 15px;
+}
+.count-down .clone{
+  font-size: 45px;
+}
+@media (max-width: 630px) {
+  .wrapper .count-down{
+    height: 80px;
+  }
+  .wrapper .count-down .timer{
+    width: 80px;
+  }
+  .count-down .timer .numb{
+    font-size: 20px;
+  }
+  .count-down .timer .text{
+    font-size: 13px;
+  }
+  .count-down .clone{
+    font-size: 40px;
+  }
+  .nav_logo {
+    padding: 50px 0;
+    margin-top: -39%;
+  }
+  .curveImg {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    pointer-events: none;
+    height: 140px;
+  }
+}
+
+@media (max-width: 542px){
+  .wrapper{
+    padding: 0 20px;
+  }
+  .wrapper .count-down .timer{
+    border: none;
+  }
+  .count-down .timer .numb{
+    font-size: 28px;
+  }
+  .count-down .timer .text{
+    font-size: 15px;
+  }
+  .count-down .clone{
+    display: none;
+  }
+  .form .email-field button{
+    width: 150px;
+    font-size: 17px;
+  }
+  .nav_logo {
+    padding: 50px 0;
+    margin-top: -100%;
+  }
+  .curveImg {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    pointer-events: none;
+    height: 150px;
+  }
+}
+@media (max-width: 340px){
+  .wrapper .count-down{
+    height: 30px;
+  }
+  .wrapper .count-down .timer{
+    width: 30px;
+  }
+  .nav_logo {
+    padding: 50px 0;
+    margin-top: -29%;
+  }
+  .curveImg {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    pointer-events: none;
+    height: 110px;
+  }
+}

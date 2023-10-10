@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>أدارة الأعمال -3</title>
+    <link rel="stylesheet" href="عام.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!---------الأحصاء--------->
+    <div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="الأحصاء.png">
+        </div>
+        <div class="top-text">
+          <div class="name"> الأحصاء</div>
+          <p> مادة الأحصاء </p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank" >أوراق العمل</a>
+            <a href="#" target="_blank">الكتاب الألكتروني </a>
+          </div>
+        </div>
+      </div>
+       <!---------Mega Goal--------->
+      <div class="card">
+        <div class="img">
+          <img src="Mega-Goal-1.png">
+        </div>
+        <div class="top-text">
+          <div class="name">Mega Goal 3-1</div>
+          <p>English language Mega Goal</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank">Worksheets</a>
+            <a href="#" target="_blank">The E-Book</a>
+          </div>
+        </div>
+      </div>
+        <!--------- فقة 1 --------->
+      <div class="card">
+        <div class="img">
+          <img src="فقة-1.png">
+        </div>
+        <div class="top-text">
+          <div class="name">فقة 1 </div>
+          <p>مادة الفقة 1</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank"> أوراق العمل</a>
+            <a href="#" target="_blank"> الكتاب الألكتروني</a>
+          </div>
+        </div>
+      </div>
+      <!--------- الجغرفيا --------->
+      <div class="card">
+        <div class="img">
+          <img src="الجغرفيا.png">
+        </div>
+        <div class="top-text">
+          <div class="name"> جغرفيا  </div>
+          <p> مادة الجغرفيا </p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank">أوراق العمل</a>
+            <a href="#" target="_blank">الكتاب الألكتروني </a>
+          </div>
+        </div>
+      </div>
+       <!--------- تخطيط الحملات التسويقية --------->
+       <div class="card">
+        <div class="img">
+          <img src="تخطيط الحملات التسويقية.png">
+        </div>
+        <div class="top-text">
+          <div class="name"> تخطيط الحملات التسويقية  </div>
+          <p> مادة الجغرفيا </p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank">أوراق العمل</a>
+            <a href="#" target="_blank">الكتاب الألكتروني </a>
+          </div>
+        </div>
+      </div>
+        <!---------مبادئ القانون --------->
+        <div class="card">
+            <div class="img">
+              <img src="مبادئ القانون.png">
+            </div>
+            <div class="top-text">
+              <div class="name">مبادئ القانون </div>
+              <p>  مبادئ القانون
+                
+              </p>
+            </div>
+            <div class="bottom-text">
+              <div class="text"></div>
+              <div class="btn">
+                <a href="#" target="_blank">أوراق العمل</a>
+                <a href="#" target="_blank">الكتاب الألكتروني </a>
+              </div>
+            </div>
+          </div>
+      <!---------  الدرسات البلاغية و النقدية--------->
+      <div class="card">
+        <div class="img">
+          <img src="الدرسات البلاغية و النقدية.png">
+        </div>
+        <div class="top-text">
+          <div class="name">   الدرسات البلاغية و النقدية</div>
+          <p>  الدرسات البلاغية و النقدية</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#" target="_blank">أوراق العمل</a>
+            <a href="#" target="_blank"> الكتاب الألكتروني</a>
+          </div>
+        </div>
+    </div>
+      <!--------- البحث و مصادر المعلومات --------->
+      <div class="card">
+        <div class="img">
+          <img src="البحث و مصادر المعلومات.png">
+        </div>
+        <div class="top-text">
+          <div class="name"> البحث و مصادر المعلومات</div>
+          <p> البحث و مصادر المعلومات</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text"></div>
+          <div class="btn">
+            <a href="#"target="_blank">أوراق العمل</a>
+            <a href="" target="_blank"> الكتاب الألكتروني</a>
+          </div>
+        </div>
+      </div>
+      <script>
+        const disabledKeys = ["c", "C", "x", "J", "u", "I"]; // keys that will be disabled
+        const showAlert = e => {
+          e.preventDefault(); // preventing its default behaviour
+          return alert("Sorry, you can't view or copy source codes this way!");
+        }
+        document.addEventListener("contextmenu", e => {
+          showAlert(e); // calling showAlert() function on mouse right click
+        });
+        document.addEventListener("keydown", e => {
+          // calling showAlert() function, if the pressed key matched to disabled keys
+          if((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+            showAlert(e);
+          }
+        });
+      </script>
+  </body>
+</html>

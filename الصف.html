@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> أختر الصف الدراسي-ترم أول </title>
+    <link rel="stylesheet" href="الصف.css">
+  </head>
+  <body>
+
+    
+    <div class="choose"> أختر الصف</div>
+
+
+    <div class="container">
+      <div class="box">
+      <div class="image">
+        <a href="اختر الماده.html">
+        <img src="اول ثانوي.png">
+        </div>
+    </a>
+        <div class="name_job">أول ثانوي <br> (مسارات) </div>
+        <a href="اختر الماده.html" style="text-decoration: none;">
+        <p> أضغط لعرض جيمع ما يحتاجه طالب الصف الأول الثانوي من مستندات دراسية</p>
+    </a>
+        <div class="btns">
+            <a href="اختر الماده.html" style="text-decoration: none;">
+          <button>أذهب</button>
+        </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <a href="أختر المسار.html" style="text-decoration: none;">
+        <img src="الثاني.png" alt="">
+    </a>
+        </div>
+        <div class="name_job">ثاني ثانوي <br> (مسارات)</div>
+       <a href="أختر المسار.html" style="text-decoration: none;">
+        <p>أضغط لعرض جيمع ما يحتاجه طالب الصف الثاني الثانوي من مستندات دراسية</p>
+    </a>
+        <div class="btns">
+            <a href="أختر المسار.html" style="text-decoration: none;">
+          <button> أذهب</button>
+        </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <a href="أختر المسار-3.html" style="text-decoration: none;">
+        <img src="الثالث.png" alt="">
+    </a>
+        </div>
+        <div class="name_job">ثالث ثانوي <br> (مسارات )</div> 
+        <a href="أختر المسار-3.html" style="text-decoration: none;">
+        <p> أضغط لعرض جيمع ما يحتاجه طالب الصف الثالث الثانوي من مستندات دراسية</p>
+    </a>
+        <div class="btns">
+            <a href="أختر المسار-3.html" style="text-decoration: none;">
+          <button>أذهب</button>
+        </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const disabledKeys = ["c", "C", "x", "J", "u", "I"]; // keys that will be disabled
+      const showAlert = e => {
+        e.preventDefault(); // preventing its default behaviour
+        return alert("Sorry, you can't view or copy source codes this way!");
+      }
+      document.addEventListener("contextmenu", e => {
+        showAlert(e); // calling showAlert() function on mouse right click
+      });
+      document.addEventListener("keydown", e => {
+        // calling showAlert() function, if the pressed key matched to disabled keys
+        if((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+          showAlert(e);
+        }
+      });
+    </script>
+      </body>
+</html>

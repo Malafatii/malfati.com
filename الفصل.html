@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> أختر الفصل الدراسي </title>
+    <link rel="stylesheet" href="الفصل.css">
+  </head>
+  <body>
+      <div class="choose"> أختر الفصل الدراسي</div>
+    <div class="container">
+      <div class="box">
+      <div class="image">
+        <a href="الصف.html">
+        <img src="اول ثانوي.png">
+        </div>
+    </a>
+        <div class="name_job">الفصل الدراسي الأول</div>
+        <a href="الصف.html" style="text-decoration: none;">
+        <p> أضغط (أذهب) لعرض جيمع مستندات الفصل الدرسي الأول</p>
+    </a>
+        <div class="btns">
+            <a href="الصف.html" style="text-decoration: none;">
+          <button>أذهب</button>
+        </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <a href="تحت الأنشاء.html" style="text-decoration: none;">
+        <img src="الثاني.png" alt="">
+    </a>
+        </div>
+        <div class="name_job">الفصل الدراسي الثاني</div>
+       <a href="تحت الأنشاء.html" style="text-decoration: none;">
+        <p>أضغط (أذهب) لعرض جيمع مستندات الفصل الدرسي الثاني</p>
+    </a>
+        <div class="btns">
+            <a href="تحت الأنشاء.html" style="text-decoration: none;">
+          <button> قريباً  </button>
+        </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <a href="تحت الأنشاء.html" style="text-decoration: none;">
+        <img src="الثالث.png" alt="">
+    </a>
+        </div>
+        <div class="name_job">الفصل الدراسي الثالث</div> 
+        <a href="تحت الأنشاء.html" style="text-decoration: none;">
+        <p> أضغط (أذهب) لعرض جيمع مستندات الفصل الدرسي الثالث</p>
+    </a>
+        <div class="btns">
+            <a href="تحت الأنشاء.html" style="text-decoration: none;">
+          <button>قريباً </button>
+        </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const disabledKeys = ["c", "C", "x", "J", "u", "I"]; // keys that will be disabled
+      const showAlert = e => {
+        e.preventDefault(); // preventing its default behaviour
+        return alert("Sorry, you can't view or copy source codes this way!");
+      }
+      document.addEventListener("contextmenu", e => {
+        showAlert(e); // calling showAlert() function on mouse right click
+      });
+      document.addEventListener("keydown", e => {
+        // calling showAlert() function, if the pressed key matched to disabled keys
+        if((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+          showAlert(e);
+        }
+      });
+    </script>
+      </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ملفاتي - الاساسية </title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="../custom-scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  </head>
+  <body>
+   
+    <main>
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="index.html">ملفاتي</a>
+              <button type="button" class="icon-button">
+                <a href="الأشعارات.html">
+            <span class="material-icons">notifications</span>
+            <span class="icon-button__badge">2</span>
+          </button></h2></a>
+
+          <ul class="menu_items"> 
+            <img src="times.svg" alt="timesicon" id="menu_toggle" />
+            <a href="login.html"> <img src="user.png" class="user"></a>
+            <li><a href="تواريخ.html" class="nav_link">تواريخ  تهمك</a></li>
+            <li><a href="الفصل.html" class="nav_link">مستندات  دراسية </a></li>
+            <li><a href="قدرات1.html" class="nav_link" >القدرات العامة </a></li>
+            <li><a href="https://schools.madrasati.sa/Student/Home/Index/FEC12D81127B23C3A661C379685AD083/0C9115929EA366518D414A16E4603E73?fromAuth=True" target="_blank" class="nav_link">مدرستي</a></li>
+            <li><a href="تواصل.html" target="_blank" class="nav_link" >تواصل معنا</a></li>
+            <li><a href="#.html" class="nav_link">من نحن </a></li>
+          </ul>
+          <img src="bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <section class="malf">
+        <div class="row container">
+          <div class="column">
+            <h2>موقع <span class="malfatii"> ملفاتي </span><br />كل ملفاتك في موقع واحد</h2>
+            <p> يستهدف الموقع راحه اكبر لطلاب الثانوية بالاضة الي جزء خاصه بمدرسه جيل الجزيزره الثانوية عن طريق توفير الكتب الاكترونيه و أوراق العمل    </p>
+            <div class="buttons">
+              <a href="الفصل.html">
+              <button class="btn"> مستندات دراسية </button>
+              </a>
+              <a href="تواريخ.html" target="_blank"><button class="btn"> تواريخ تهمك </button></a>
+            </div>
+          </div>
+          <div class="column">
+            <img src="signin-student.svg" class="malf_img" />
+          </div>
+        </div>
+        <img src="bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+    
+    
+  </body>
+</html>
